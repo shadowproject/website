@@ -1,0 +1,27 @@
+### This is the language file for the Shadow Project website ###
+
+
+# Basic template translations
+
+DONATE: Donate
+DONATE_BITCOIN: Donate Bitcoin
+DONATE_SDC: Donate ShadowCash
+EDIT_PAGE: Edit this page
+EDIT_MORE: Found a mistake or outdated information? Edit this page on GitHub!
+CONTRIBUTE: Contribute
+LEGAL: Legal
+
+## Home page
+
+INTRODUCTION_SENTENCE: The Shadow Project is an open source project aiming to be the core of privacy, where people will build decentralized applications.
+
+## Getting Started Page
+
+DL_TITLE: Download Wallet
+DL_LATEST: Latest version
+DL: Download
+DL_W64: Download 64bit Windows Wallet
+DL_W32: Download 32bit Windows Wallet
+DL_L64: Download 64bit Linux Wallet
+DL_L32: Download 32bit Linux Wallet
+DL_OSX: Download MacOS X Wallet
