@@ -1,0 +1,151 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
+<head>
+
+{% block head %}
+    <meta charset="utf-8" />
+    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+    {% include 'partials/metadata.html.twig' %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta property="og:title" content="Shadow Project" />
+    <meta property="og:description" content="The Shadow Project is an open source project aiming to be the core of privacy, where people will build decentralized applications" />
+    <meta property="og:url" content="http://shadowproject.io" />
+    
+    <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png', true) }}" />
+    <link rel="canonical" href="{{ page.url(true, true) }}" />
+
+    {% block stylesheets %}
+        {% do assets.addCss('theme://css/pure-0.5.0/grids-min.css', 103) %}
+        {% do assets.addCss('theme://css-compiled/nucleus.css',102) %}
+        {% do assets.addCss('theme://css/font-awesome.min.css',100) %}
+        {% do assets.addCss('theme://css/slidebars.min.css') %}
+        {% do assets.addCss('theme://css/shadowproject.css') %}
+
+        {% if browser.getBrowser == 'msie' and browser.getVersion == 10 %}
+            {% do assets.addCss('theme://css/nucleus-ie10.css') %}
+        {% endif %}
+        {% if browser.getBrowser == 'msie' and browser.getVersion >= 8 and browser.getVersion <= 9 %}
+            {% do assets.addCss('theme://css/nucleus-ie9.css') %}
+            {% do assets.addJs('theme://js/html5shiv-printshiv.min.js') %}
+        {% endif %}
+    {% endblock %}
+    {{ assets.css() }}
+
+    {% block javascripts %}
+        {% do assets.addJs('jquery',101) %}
+        {% do assets.addJs('theme://js/modernizr.custom.71422.js',100) %}
+        {% do assets.addJs('theme://js/antimatter.js') %}
+        {% do assets.addJs('theme://js/slidebars.min.js') %}
+    {% endblock %}
+    {{ assets.js() }}
+
+{% endblock head%}
+</head>
+<body id="top" class="{{ page.header.body_classes }}">
+
+    <div id="header">
+        <div class="row">
+            <div class="column">
+                <div class="logo">
+                    <h1 class="logotype">
+                        <a href="{{ base_url == '' ? '/' : base_url }}">
+                            <i class="ico ico-shadow"></i>Shadow<span class="red">Project</span><span class="grey">.io</span>
+                        </a>
+                        </h1>
+                </div>
+            </div>
+        </div>
+    </div><!-- #header -->
+
+    <div class="row">
+        <div class="medium-4 large-3 columns">
+            <div id="sidebar">
+                <ul class="nav">
+                    {% if theme_config.dropdown.enabled %}
+                        {{ _self.loop(pages) }}
+                    {% else %}
+                        {% for page in pages.children.visible %}
+                            {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
+                            <li class="{{ current_page }}">
+                                <a href="{{ page.url }}">
+                                    {% if page.header.icon %}<i class="fa fa-{{ page.header.icon }}"></i>{% endif %}
+                                    {{ page.menu }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    {% endif %}
+                    {% block header_extra %}{% endblock %}
+                    {% if config.plugins.langswitcher.enabled %}
+                        {% include 'partials/langswitcher.html.twig' %}
+                    {% endif %}
+                </ul>
+
+                <div class="part">
+                    <div class="donate desc">{{ "DONATE"|t }}</div>
+                    <a class="donate secondary button btc" title="{{ "DONATE_BITCOIN"|t }}" href="bitcoin:1GiosBkSpN8RS9pm1kgZU8AZUBEnLKYFem&label=SDC%20Dev%20Fund">
+                        <i class="ico ico-bitcoin"></i>
+                    </a>
+                    <a class="donate secondary button sdc" title="{{ "DONATE_SDC"|t }}" href="shadowcoin:SdcDevWEbq3CZgZc8UNbST1TaYLA5vLZTS&label=SDC%20Dev%20Fund">
+                        <i class="ico ico-shadow"></i>
+                    </a>
+                </div>
+            </div><!-- #sidebar -->
+        </div>
+        <div class="medium-8 large-9 columns">
+            <div id="content">
+                {% block showcase %}{% endblock %}
+                {% block content %}{% endblock %}
+                <div class="edit-me">
+                    <a href="https://github.com/shadowproject/shadowproject.github.io/" class="secondary button">{{ "EDIT_PAGE"|t }}</a> {{ "EDIT_MORE"|t }}
+                </div>
+            </div><!-- #content -->
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="row">
+            <div class="medium-5 columns">
+                <div class="copyright">
+                    <p>&copy; 2014 - 2016 &ensp;<a href="http://shadowproject.io">shadowproject.io</a> &bull; contact [at] shadowproject.io</a><p>
+                </div>
+            </div>
+            <div class="medium-7 columns">
+                <div class="links">
+                    <p>
+                        <a href="development">{{ "CONTRIBUTE"|t }}</a>&emsp;&bull;&emsp;<a href="legal">{{ "LEGAL"|t }}</a>&emsp;&bull;&emsp;
+                        <a href="https://github.com/shadowproject"><i class="icon ico-github"></i></a>
+                        <a href="https://www.facebook.com/shadowcrypto"><i class="icon ico-facebook"></i></a>
+                        <a href="https://twitter.com/sdcoin"><i class="icon ico-twitter"></i></a>
+                        <a href="https://google.com/+ShadowCash-SDC"><i class="icon ico-gplus"></i></a>
+                        <a href="https://www.youtube.com/channel/UC-Nhf9JWCXvQi4pXxXNqy7Q"><i class="icon ico-youtube"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div><!-- #footer -->
+
+    <div class="sb-slidebar sb-left sb-width-thin">
+        <div id="panel">
+        {% include 'partials/navigation.html.twig' %}
+        </div>
+    </div>
+
+    <script src="{{ url('theme://js/video.js', true) }}"></script>
+    <script src="{{ url('theme://js/shadowproject.js', true) }}"></script>
+
+    {% block bottom %}
+        {{ assets.js('bottom') }}
+        <script>
+        $(function () {
+            $(document).ready(function() {
+              $.slidebars({
+                hideControlClasses: true,
+                scrollLock: true
+              });
+            });
+        });
+        </script>
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,380 @@
+@import "brickst";
+@import "fonts.css";
+@import "shadowicons.css";
+@import "video-js.css";
+
+/*! ------ ShadowProject.io | Author @AllienWorks ------ */
+
+$red: #E2213D; // Shadow crimson red
+$black: #1C1C21; // texts..
+$grey: #BABAC7; // bullets, small print
+$lightgrey: #DFDFE6; // lines, dividers..
+$bg: #F7F7F9; // white
+
+
+// ------ GENERAL STYLES ------ //
+
+html { font-size: 14px; } // global scaling
+
+body {
+  background: $bg;
+  font-family: "OpenSans", sans-serif; color: $black; line-height: 1.7;
+}
+.row {
+  max-width: 72rem; // define max width of content
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "LatoHeavy", sans-serif; font-weight: normal;
+}
+h1 {
+  font-size: 1.5rem; color: $red; text-transform: uppercase;
+  margin-top: 0;
+}
+h2 {
+  font-size: 1.5rem; color: $red; text-transform: uppercase;
+  margin-top: 3rem;
+  &:first-of-type { margin-top: 0; }
+  & + h3 { margin-top: 1rem; }
+}
+h3 { font-size: 1.3rem; margin-top: 3rem; }
+h4 { font-size: 1.15rem; margin-top: 2rem; }
+
+a {
+  font-family: "OpenSansBold", sans-serif; color: $black;
+  border-bottom: 1px solid rgba($red, 0.3);
+  &:hover { border-bottom: 1px solid $red; color: darken($black, 20%); }
+}
+
+p { margin: 0 0 1.5rem; }
+
+b, strong, p.lead { font-family: "OpenSansBold", sans-serif; font-weight: normal; }
+em { font-family: "OpenSansItalic", sans-serif; font-style: normal; }
+
+pre {
+    white-space: pre-line;
+}
+code {
+  font-size: 0.9rem; color: #777;
+  background: #fff; border-radius: 3px;
+  padding: 0.1rem 0.5rem;
+}
+blockquote {
+  font-family: "OpenSansItalic", sans-serif; color: lighten($black, 30%);
+  margin: 1.7rem 0px 1.7rem 1rem; padding-left: 2rem;
+  border-left: 2px solid $lightgrey;
+}
+table {
+  margin: 1.5rem 0 2.5rem;
+  width: 100%;
+  tr {
+    th {
+      font-family: "OpenSansBold", sans-serif; font-weight: normal;
+      &.status { width: 3.2rem; }
+      .icon {
+        text-align: center; color: $grey; font-size: 1.3rem;
+        display: inline;
+        position: relative; top: 2px; left: 0.7rem;
+        &.ico-current { color: $black; }
+        &.ico-done { color: $red; }
+      }
+    }
+    th, td {
+      padding: 0.5rem 0.7rem;
+      vertical-align: top;
+      border-bottom: 1px solid $lightgrey;
+    }
+    &:first-child {
+      th, td { border-top: 1px solid $lightgrey; }
+    }
+    &:nth-child(2n+1) {
+      th, td { background: lighten($bg, 1.7%); }
+    }
+  }
+}
+abbr[title] { text-decoration: none; border-bottom: 1px dotted #999; }
+
+dl {
+  margin: 0 0 2.4rem;
+  dt { font-family: "OpenSansBold", sans-serif; text-transform: uppercase; margin-bottom: 0.3rem; }
+  dd { margin-left: 1.5rem; }
+}
+
+// content styling
+#content {
+  ul {
+    margin: 0 0 1.5rem; padding: 0;
+    list-style: none;
+    li {
+      position: relative;
+      &::before {
+        content: "•";
+        position: absolute; left: -1.9rem; top: -4px;
+        color: $grey; font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+// ------ LAYOUT ------ //
+
+#header {
+  @include gradient(#fff, $bg); border-bottom: 1px solid $lightgrey;
+  padding: 3rem 0;
+  text-align: center;
+  @include respond-to(medium) {
+    text-align: left;
+  }
+  .logo {
+    text-transform: uppercase;
+    .logotype {
+      font-size: 1.7rem; line-height: 1.6;
+      margin: 0;
+      a { font-family: "LatoHeavy", sans-serif; color: $black; border: none; }
+      i.ico {
+        color: #E2213D; font-size: 2.2rem;
+        position: relative; top: 4px;
+        margin-right: 1.1rem;
+      }
+      .red { color: $red; }
+      .grey { color: $grey; font-family: "Lato", sans-serif; }
+    }
+  }
+}
+
+
+#content {
+  border-top: 1px solid $lightgrey;
+  padding: 3rem 0;
+  @include respond-to(medium) {
+    border: 0; border-left: 1px solid $lightgrey;
+    padding: 4rem 0 5.5rem 7rem;
+  }
+  // Single-column pages (KTHXBYE page for contact form)
+  &.single-column { border: 0; padding-left: 0; }
+  // Edit-me message
+  .edit-me {
+    font-size: 0.8rem; color: darken($grey, 10%);
+    border-top: 1px dashed $lightgrey;
+    margin: 6rem 0 -5.5rem -7rem; padding: 2rem 0 1.3rem 7rem;
+    a.button {
+      font-size: 0.85rem; font-family: "Lato", sans-serif;
+      padding: 0.2rem 1rem; margin-right: 1rem;
+      border-width: 1px;
+    }
+  }
+}
+
+
+#sidebar {
+  padding: 3rem 0;
+  @include respond-to(medium) {
+    padding: 4rem 2.5rem 4rem 0;
+    text-align: right;
+  }
+  ul.nav {
+    list-style: none;
+    margin: 0; padding: 0;
+    li {
+      a {
+        display: inline-block; padding: 0.35rem 0;
+        font-family: "Lato", sans-serif; text-transform: uppercase;
+        color: $black; line-height: 1.5;
+        border: none;
+        &.active { font-family: "LatoHeavy", sans-serif; }
+      }
+    }
+    &:hover {
+      a:not(.active) {
+        color: lighten($black, 35%);
+        &:hover { color: $black; }
+      }
+    }
+  }
+  // stuff in sidebar
+  .part {
+    margin: 3rem 0 0;
+    .donate {
+      &.button {
+        margin-left: 0.2rem; padding: 0.25rem 0.75rem;
+        border-radius: 50%; border-width: 2px;
+        &.btc:hover { background: #F7931A; border-color: darken(#F7931A, 10%); color: #fff; }
+        &.sdc:hover { background: $red; border-color: darken($red, 10%); color: #fff; }
+        i.ico { margin: 0; }
+      }
+      &.desc {
+        text-transform: uppercase; font-size: 0.9rem; color: $grey;
+        display: inline-block; margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+
+#footer {
+  border-top: 1px solid $lightgrey;
+  padding: 2.5rem 0 4rem;
+  text-align: center; color: $grey;
+  a {
+    font-family: "OpenSans", sans-serif; color: $grey;
+    border: none;
+    &:hover { color: darken($grey, 10%); }
+  }
+  .icon {
+    @extend .tfx;
+    font-size: 1.3rem; color: $grey;
+    margin-left: 0.25rem;
+    position: relative; top: 2.2px;
+    &:hover { color: $red; }
+    &.ico-github { margin-left: 0; }
+  }
+  @include respond-to(medium) {
+    text-align: left;
+    .links { text-align: right; }
+  }
+}
+
+
+
+// ------ UI & HELPER ------ //
+
+.box {
+  background: #fff; box-shadow: 0 2px 4px rgba($grey, 0.4);
+  padding: 0.5rem 0; margin: 0.5rem 0;
+  // Wallet downloads
+  &.wallet {
+    @extend .clearfix;
+    text-align: center;
+    .os {
+      font-family: "LatoHeavy"; font-weight: normal; font-size: 1.3rem;
+      margin: 1.7rem 0;
+      .icon {
+        font-size: 1.4rem;
+        margin-right: 0.7rem;
+        position: relative; top: 1px;
+      }
+    }
+    .button {
+      color: $black;
+      width: 100%; float: left; margin: 0 0 -0.5rem;
+      background: none;
+      border-top: 1px solid darken($bg, 10%); border-bottom-color: darken($bg, 12%);
+      &:hover { background: $red; color: #fff; border-bottom-color: darken($red, 25%); }
+      &.split {
+        width: 50%;
+        border-right: 1px solid darken($bg, 10%);
+        &:last-child { border-right: 0; }
+      }
+    }
+  }
+}
+
+// general messages - info boxes, alerts, warnings etc..
+.message {
+  margin: 1.5rem 0 2rem; padding: 1rem 1.7rem;
+  background: #fff; box-shadow: 0 2px 4px rgba($grey, 0.4);
+  &.alert { border-right: 3px solid $red; }
+}
+
+.label {
+  font-size: 0.8rem; text-transform: uppercase;
+  background: $lightgrey; border-radius: 3px;
+  padding: 0.1rem 0.6rem; margin: 0 0.5rem;
+}
+
+#content ul.block-grid-3 {
+  margin-left: -$block-grid-spacing; margin-right: -$block-grid-spacing;
+  li::before { content: ""; }
+}
+
+// forms
+form {
+  input, textarea {
+    @extend .tfx;
+    border: 0; border-bottom: 1px solid $lightgrey; border-radius: none;
+    padding: 1rem 1.3rem; margin-bottom: 1rem;
+    &:hover { border-color: darken($lightgrey, 10%); }
+    &:focus { border-color: $red; }
+  }
+  &.contact {
+    width: 100%; max-width: 34rem;
+    .button[type="submit"] {
+      max-width: 13rem; padding: 1.2rem 1rem 1rem; margin-top: 1rem;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.button, button {
+  border-radius: 0; background: $red; border-bottom: 3px solid darken($red, 15%);
+  margin-bottom: 1rem;
+  font-family: "LatoHeavy"; font-weight: normal; text-transform: uppercase;
+  span { font-family: "Lato"; font-weight: normal; }
+  .ico {
+    margin-right: 0.4rem; font-size: 1rem; line-height: 1;
+    position: relative; top: 2px;
+  }
+  &:hover {
+    background: darken($red, 7%); border-bottom: 3px solid darken($red, 25%);
+  }
+  // variants
+  &.secondary {
+    background: $lightgrey; border-color: darken($lightgrey, 15%);
+    &:hover {
+      background: darken($lightgrey, 7%); border-color: darken($lightgrey, 25%);
+    }
+  }
+  // sizes
+  &.small {
+    padding: 0.7rem 1.4rem 0.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+
+// ------ PLUG-INS & JS ------ //
+
+// Anchor.js
+a.anchorjs-link {
+  border: none;
+  color: $grey;
+  &:hover { border: none; color: $black; }
+}
+
+
+// Video.js
+.video-container {
+  width: 100%; margin: 2.5rem 0;
+  .video-js {
+    width: 100%; height: 100%;
+    &:hover {
+      .vjs-big-play-button { background-color: rgba($red, 0.9); }
+    }
+    .vjs-big-play-button {
+      font-size: 5em; line-height: 1.8em;
+      width: 1.8em; height: 1.8em;
+      top: 50%; left: 50%; transform: translate(-50%, -50%);
+      border: none; border-radius: 50%;
+      background-color: rgba($black, 0.8);
+    }
+    .vjs-poster { box-shadow: 0 0 10rem #fff inset; }
+    .vjs-control-bar {
+      background: rgba($bg, 0.8);
+      color: $black;
+      button:hover {
+        border: none; background: none;
+        color: $red;
+      }
+      .vjs-progress-holder {
+        .vjs-play-progress {
+          background: $red;
+          &::before { color: $red; }
+        }
+      }
+      .vjs-volume-level {
+        background-color: $red;
+        &::before { color: $red; }
+      }
+    }
+  }
+}

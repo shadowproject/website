@@ -1,0 +1,18 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+	<p>
+		{{ "INTRODUCTION_SENTENCE"|t }}
+	</p>
+	<div class="video-container">
+		<video id="intro-video" class="video-js" controls preload="auto" poster="{{ url('theme://video/shadow-intro_poster.jpg', true) }}" data-setup="{}">
+	    <source src="{{ url('theme://video/shadow-intro.mp4', true) }}" type='video/mp4'>
+	    <source src="{{ url('theme://video/shadow-intro.webm', true) }}" type='video/webm'>
+	    <p class="vjs-no-js">
+	      To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video
+	    </p>
+	  </video>
+	</div>
+
+	{{ page.content }}
+{% endblock %}

@@ -1,0 +1,68 @@
+@font-face {
+	font-family: 'shadow';
+	src:url('../fonts/shadow.eot?msj0zp');
+	src:url('../fonts/shadow.eot?msj0zp#iefix') format('embedded-opentype'),
+		url('../fonts/shadow.ttf?msj0zp') format('truetype'),
+		url('../fonts/shadow.woff?msj0zp') format('woff'),
+		url('../fonts/shadow.svg?msj0zp#shadow') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+i {
+    /* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'shadow' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.ico-bitcoin:before {
+	content: "\e900";
+}
+.ico-current:before {
+	content: "\e901";
+}
+.ico-done:before {
+	content: "\e902";
+}
+.ico-facebook:before {
+	content: "\e903";
+}
+.ico-github:before {
+	content: "\e904";
+}
+.ico-gplus:before {
+	content: "\e905";
+}
+.ico-link:before {
+	content: "\e906";
+}
+.ico-linux:before {
+	content: "\e907";
+}
+.ico-mac:before {
+	content: "\e908";
+}
+.ico-shadow:before {
+	content: "\e909";
+}
+.ico-tbd:before {
+	content: "\e90a";
+}
+.ico-twitter:before {
+	content: "\e90b";
+}
+.ico-win:before {
+	content: "\e90c";
+}
+.ico-youtube:before {
+	content: "\e90d";
+}
