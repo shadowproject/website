@@ -9,6 +9,8 @@ cache_enable: true
 visible: true
 ---
 
+### _this is the development version of ShadowProject.io_ 
+
 ## SHADOWCASH SPECS.
 
 - Block time: **60** s
