@@ -11,6 +11,8 @@ visible: true
 
 ### _this is the development version of ShadowProject.io_ 
 
+Expect some strange anomalies }o{
+
 ## SHADOWCASH SPECS.
 
 - Block time: **60** s
