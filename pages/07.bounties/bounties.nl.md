@@ -26,17 +26,19 @@ Depending on the type of bug and when it is reported, different bounties will be
 - Anything that is the result of an automated Nessus/PCI scans (too general)
 - DNS issues (e.g. lack of an SPF record)
 - SSL certificate issues
--Bugs that have received mainstream tech media or community attention before the date of your disclosure.
+- Bugs that have received mainstream tech media or community attention before the date of your disclosure.
 
 ## BUG BOUNTIES & REWARDS
 
+Depending on the type of bug and when it is reported, different bounties will be awarded. Bounties are paid out in SDC, at the 3-day average of each to a fixed US Dollar value.
+
 Reward | Bug
 --- | ---
-**$1500**	| Deanonymize ShadowChat or ShadowSend (proof that a protocol is not anonymous)
-**$750**	| A flaw in the protocol that allows for theft or loss of funds
-**$500**	| A bug in the reference client that leads to consensus issues
-**$250**	| A bug which causes data corruption or loss
-**$100**	| A bug which causes the application to crash
+**$1500** | Deanonymize ShadowChat or ShadowSend (proof that a protocol is not anonymous)
+**$750** | A flaw in the protocol that allows for theft or loss of funds
+**$500** | A bug in the reference client that leads to consensus issues
+**$250** | A bug which causes data corruption or loss
+**$100** | A bug which causes the application to crash
 **$50**	| Other non-harmless bugs
 **$10**	| ‘Harmless’ bugs, e.g. cosmetic errors
 

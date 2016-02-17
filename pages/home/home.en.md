@@ -9,10 +9,6 @@ cache_enable: true
 visible: true
 ---
 
-### _this is the development version of ShadowProject.io_ 
-
-Expect some strange anomalies }o{
-
 ## SHADOWCASH SPECS.
 
 - Block time: **60** s
@@ -30,10 +26,7 @@ Expect some strange anomalies }o{
 
 ## SHADOW IN THE PRESS
 
-- [German youth is arrested for darkweb trades, while decentralised markets come online](http://bravenewcoin.com/news/german-youth-is-arrested-for-darkweb-trades-while-decentralised-markets-come-online/) <br>
-_ _Brave New Coin (10 November 2015)_
-- [The Race for a Decentralised Silk Road Is On](http://motherboard.vice.com/read/the-race-for-the-first-decentralised-silk-road-is-on) <br>
-_ _Motherboard VICE (23 March 2015)_
-- [Shadowcash Hits Zero-Knowledge Jackpot with Casino-style Anonymity](https://www.deepdotweb.com/2015/01/28/shadowcash-zero-knowledge-anonymity/) <br>
-_ _DeepDotWeb (28 January 2015)_
+- [German youth is arrested for darkweb trades, while decentralised markets come online](http://bravenewcoin.com/news/german-youth-is-arrested-for-darkweb-trades-while-decentralised-markets-come-online/) <br>&mdash; _Brave New Coin (10 November 2015)_
+- [The Race for a Decentralised Silk Road Is On](http://motherboard.vice.com/read/the-race-for-the-first-decentralised-silk-road-is-on) <br>&mdash; _Motherboard VICE (23 March 2015)_
+- [Shadowcash Hits Zero-Knowledge Jackpot with Casino-style Anonymity](https://www.deepdotweb.com/2015/01/28/shadowcash-zero-knowledge-anonymity/) <br>&mdash; _DeepDotWeb (28 January 2015)_
 
