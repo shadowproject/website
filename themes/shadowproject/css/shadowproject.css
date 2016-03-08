@@ -156,12 +156,28 @@ h1, h2, h3, h4, h5 {
     float: left;
     margin: 0; } }
 
+ul.block-grid-4 {
+  margin: -0.7rem; }
+  ul.block-grid-4 > li {
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 0 0.7rem; }
+
 ul.block-grid-3 {
   margin: -0.7rem; }
   ul.block-grid-3 > li {
     display: block;
     float: left;
     width: 33.3333%;
+    padding: 0 0.7rem; }
+
+ul.block-grid-2 {
+  margin: -0.7rem; }
+  ul.block-grid-2 > li {
+    display: block;
+    float: left;
+    width: 50%;
     padding: 0 0.7rem; }
 
 input,
@@ -245,11 +261,11 @@ iframe {
   -webkit-transform: scale(1.1);
   transform: scale(1.1); }
 
-.clearfix::before, ul.block-grid-3::before, .box.wallet::before, .clearfix::after, ul.block-grid-3::after, .box.wallet::after {
+.clearfix::before, ul.block-grid-4::before, ul.block-grid-3::before, ul.block-grid-2::before, .box.wallet::before, .clearfix::after, ul.block-grid-4::after, ul.block-grid-3::after, ul.block-grid-2::after, .box.wallet::after {
   content: "";
   display: table; }
 
-.clearfix::after, ul.block-grid-3::after, .box.wallet::after {
+.clearfix::after, ul.block-grid-4::after, ul.block-grid-3::after, ul.block-grid-2::after, .box.wallet::after {
   clear: both; }
 
 .show-grid {

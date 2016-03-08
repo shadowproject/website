@@ -167,12 +167,30 @@ h1, h2, h3, h4, h5 {
 }
 
 // Block Grid (deeply borrowed from Foundation as well :)
+ul.block-grid-4 {
+	@extend .clearfix;
+	margin: 0 -$block-grid-spacing;
+	& > li {
+		display: block; float: left;
+		width: 25%; padding: 0 $block-grid-spacing;
+	}
+}
+
 ul.block-grid-3 {
 	@extend .clearfix;
 	margin: 0 -$block-grid-spacing;
 	& > li {
 		display: block; float: left;
 		width: 33.3333%; padding: 0 $block-grid-spacing;
+	}
+}
+
+ul.block-grid-2 {
+	@extend .clearfix;
+	margin: 0 -$block-grid-spacing;
+	& > li {
+		display: block; float: left;
+		width: 50%; padding: 0 $block-grid-spacing;
 	}
 }
 
