@@ -435,8 +435,6 @@ table {
   margin: 1.5rem 0 2.5rem;
   width: 100%; }
   table thead tr th {
-    background: none;
-    border-top: 0;
     font-size: 0.8rem;
     text-transform: uppercase;
     color: #9090a5; }
@@ -461,9 +459,9 @@ table {
     padding: 0.5rem 0.7rem;
     vertical-align: top;
     border-bottom: 1px solid #DFDFE6; }
-  table tr:first-child th, table tr:first-child td {
+  table tr:first-child td {
     border-top: 1px solid #DFDFE6; }
-  table tr:nth-child(2n+1) th, table tr:nth-child(2n+1) td {
+  table tr:nth-child(2n) th, table tr:nth-child(2n) td {
     background: #fcfcfd; }
 
 abbr[title] {

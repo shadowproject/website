@@ -70,7 +70,6 @@ table {
   thead {
     tr {
       th {
-        background: none; border-top: 0;
         font-size: 0.8rem; text-transform: uppercase; color: darken($grey, 15%);
       }
     }
@@ -93,9 +92,9 @@ table {
       border-bottom: 1px solid $lightgrey;
     }
     &:first-child {
-      th, td { border-top: 1px solid $lightgrey; }
+      td { border-top: 1px solid $lightgrey; }
     }
-    &:nth-child(2n+1) {
+    &:nth-child(2n) {
       th, td { background: lighten($bg, 1.7%); }
     }
   }
