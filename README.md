@@ -16,9 +16,9 @@ If you don't want to mess with Gulp, just edit the Sass files and ask someone el
 
 Here's a short version (WIP, might not be correct):
 
-- (skip) navigate to the Project in Terminal and type ```npm install gulp --save-dev``` (this will download all the modules and dependencies)
-- (skip) then install Sass module via ```npm install gulp-sass --save-dev```
-- now all you need to do is start ```gulp``` - it will automatically watch for file changes and compile them immediately
+- navigate to the Project in Terminal and type ```npm install gulp --save-dev``` (this will download all the modules and dependencies; you need this to run only the first time)
+- then install Sass module via ```npm install gulp-sass --save-dev``` (also run just once)
+- now all you need to do is start ```gulp``` - it will automatically watch for file changes and compile them immediately (let it run in terminal and try modifying some SCSS and save it)
 
 (There _has_ to be even easier way, but I'm not aware of it ATM. If _you_ know, share pls)
 

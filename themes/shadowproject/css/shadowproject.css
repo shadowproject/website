@@ -418,6 +418,12 @@ blockquote {
 table {
   margin: 1.5rem 0 2.5rem;
   width: 100%; }
+  table thead tr th {
+    background: none;
+    border-top: 0;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #9090a5; }
   table tr th {
     font-family: "OpenSansBold", sans-serif;
     font-weight: normal; }
@@ -615,7 +621,7 @@ dl {
   .box.wallet {
     text-align: center; }
     .box.wallet .os {
-      font-family: "LatoHeavy";
+      font-family: "LatoHeavy", sans-serif;
       font-weight: normal;
       font-size: 1.3rem;
       margin: 1.7rem 0; }
@@ -689,11 +695,11 @@ form.contact {
   background: #E2213D;
   border-bottom: 3px solid #a11529;
   margin-bottom: 1rem;
-  font-family: "LatoHeavy";
+  font-family: "LatoHeavy", sans-serif;
   font-weight: normal;
   text-transform: uppercase; }
   .button span, button span {
-    font-family: "Lato";
+    font-family: "Lato", sans-serif;
     font-weight: normal; }
   .button .ico, button .ico {
     margin-right: 0.4rem;

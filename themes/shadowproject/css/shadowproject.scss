@@ -67,6 +67,14 @@ blockquote {
 table {
   margin: 1.5rem 0 2.5rem;
   width: 100%;
+  thead {
+    tr {
+      th {
+        background: none; border-top: 0;
+        font-size: 0.8rem; text-transform: uppercase; color: darken($grey, 15%);
+      }
+    }
+  }
   tr {
     th {
       font-family: "OpenSansBold", sans-serif; font-weight: normal;
@@ -246,7 +254,7 @@ dl {
     @extend .clearfix;
     text-align: center;
     .os {
-      font-family: "LatoHeavy"; font-weight: normal; font-size: 1.3rem;
+      font-family: "LatoHeavy", sans-serif; font-weight: normal; font-size: 1.3rem;
       margin: 1.7rem 0;
       .icon {
         font-size: 1.4rem;
@@ -308,8 +316,8 @@ form {
 .button, button {
   border-radius: 0; background: $red; border-bottom: 3px solid darken($red, 15%);
   margin-bottom: 1rem;
-  font-family: "LatoHeavy"; font-weight: normal; text-transform: uppercase;
-  span { font-family: "Lato"; font-weight: normal; }
+  font-family: "LatoHeavy", sans-serif; font-weight: normal; text-transform: uppercase;
+  span { font-family: "Lato", sans-serif; font-weight: normal; }
   .ico {
     margin-right: 0.4rem; font-size: 1rem; line-height: 1;
     position: relative; top: 2px;

@@ -1,0 +1,24 @@
+{
+  "name": "shadow-project",
+  "version": "1.0.0",
+  "description": "Shadow Project's official website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadowproject/website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shadowproject/website/issues"
+  },
+  "homepage": "https://github.com/shadowproject/website#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-useref": "^3.0.4"
+  }
+}
