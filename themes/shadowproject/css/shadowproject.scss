@@ -67,9 +67,6 @@ blockquote {
 table {
   margin: 1.5rem 0 2.5rem;
   width: 100%;
-  thead tr th {
-    color: darken($grey, 15%); text-transform: uppercase; font-size: 0.8rem;
-  }
   tr {
     th {
       font-family: "OpenSansBold", sans-serif; font-weight: normal;
@@ -88,9 +85,9 @@ table {
       border-bottom: 1px solid $lightgrey;
     }
     &:first-child {
-      td { border-top: 1px solid $lightgrey; }
+      th, td { border-top: 1px solid $lightgrey; }
     }
-    &:nth-child(2n) {
+    &:nth-child(2n+1) {
       th, td { background: lighten($bg, 1.7%); }
     }
   }
