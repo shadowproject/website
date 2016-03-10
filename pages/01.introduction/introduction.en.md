@@ -30,6 +30,7 @@ Name | What do I do ?
  **SebSebastian** | Media Liaison/PR, reddit
  **Code** | Shadowproject websites developer, Community manager
  **Allien** | Shadowproject websites designer, Front-end developer
+ **wheatclove** | Bug testing, Apprentice
 
 ### Former Members
 
