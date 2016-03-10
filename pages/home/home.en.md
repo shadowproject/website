@@ -14,6 +14,7 @@ visible: true
 - Block time: **60** s
 - Difficulty re-target: **every block**
 - Nominal stake interest: **2%** annually
+- POSV3 changes ?
 - Min. stake age: **8 hours** (no max age)
 - P2P port: 51737
 - RPC port: 51736
