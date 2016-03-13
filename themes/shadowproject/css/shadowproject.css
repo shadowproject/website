@@ -253,7 +253,7 @@ iframe {
 .text-center {
   text-align: center; }
 
-.tfx, .button, button, #footer .icon, form input, form textarea, a {
+.tfx, .button, button, #content .press-logos .logo, #footer .icon, form input, form textarea, a {
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
 
@@ -261,11 +261,11 @@ iframe {
   -webkit-transform: scale(1.1);
   transform: scale(1.1); }
 
-.clearfix::before, ul.block-grid-4::before, ul.block-grid-3::before, ul.block-grid-2::before, .box.wallet::before, .clearfix::after, ul.block-grid-4::after, ul.block-grid-3::after, ul.block-grid-2::after, .box.wallet::after {
+.clearfix::before, ul.block-grid-4::before, ul.block-grid-3::before, ul.block-grid-2::before, #content .press-logos::before, .box.wallet::before, .clearfix::after, ul.block-grid-4::after, ul.block-grid-3::after, ul.block-grid-2::after, #content .press-logos::after, .box.wallet::after {
   content: "";
   display: table; }
 
-.clearfix::after, ul.block-grid-4::after, ul.block-grid-3::after, ul.block-grid-2::after, .box.wallet::after {
+.clearfix::after, ul.block-grid-4::after, ul.block-grid-3::after, ul.block-grid-2::after, #content .press-logos::after, .box.wallet::after {
   clear: both; }
 
 .show-grid {
@@ -551,6 +551,15 @@ dl {
       padding: 0.2rem 1rem;
       margin-right: 1rem;
       border-width: 1px; }
+  #content .press-logos {
+    margin-bottom: 2rem; }
+    #content .press-logos .logo {
+      float: left;
+      margin-right: 1.5rem;
+      opacity: 0.5;
+      outline: none; }
+      #content .press-logos .logo:hover {
+        opacity: 1; }
 
 #sidebar {
   padding: 3rem 0; }
@@ -678,10 +687,10 @@ dl {
   padding: 0.1rem 0.6rem;
   margin: 0 0.5rem; }
 
-#content ul.block-grid-3, #content ul.block-grid-2 {
+#content ul.block-grid-4, #content ul.block-grid-3, #content ul.block-grid-2 {
   margin-left: -0.7rem;
   margin-right: -0.7rem; }
-  #content ul.block-grid-3 li::before, #content ul.block-grid-2 li::before {
+  #content ul.block-grid-4 li::before, #content ul.block-grid-3 li::before, #content ul.block-grid-2 li::before {
     content: ""; }
 
 form input, form textarea {

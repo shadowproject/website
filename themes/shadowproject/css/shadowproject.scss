@@ -170,6 +170,17 @@ dl {
       border-width: 1px;
     }
   }
+  // In the Press (logos)
+  .press-logos {
+    @extend .clearfix;
+    margin-bottom: 2rem;
+    .logo {
+      @extend .tfx;
+      float: left; margin-right: 1.5rem;
+      opacity: 0.5; outline: none;
+      &:hover { opacity: 1; }
+    }
+  }
 }
 
 
@@ -290,7 +301,7 @@ dl {
 }
 
 #content {
-  ul.block-grid-3, ul.block-grid-2 {
+  ul.block-grid-4, ul.block-grid-3, ul.block-grid-2 {
     margin-left: -$block-grid-spacing; margin-right: -$block-grid-spacing;
     li::before { content: ""; }
   }
