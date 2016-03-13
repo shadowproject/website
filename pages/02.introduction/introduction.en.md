@@ -13,31 +13,3 @@ On December 10, 1948, the General Assembly of the United Nations adopted and pro
 >“No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, nor to attacks upon his honour and reputation. Everyone has the right to the protection of the law against such interference or attacks."
 
 Nearly 67 years later, we believe this declaration to be more important than ever. To help protect this most basic right to privacy, The Shadow Project is building an encrypted, digital ecosystem. Cryptographic innovations will catalyze the evolution of communication, commerce, and currency. Shadow’s mission is to remain at the forefront of this evolution with it’s decentralized privacy platform, made available to all operating systems.
-
-## TEAM
-
-Want to be part of the team ? **[Get involved !](https://shadowproject.io/development)**
-
-Name | What do I do ?
- --- | --- 
- **rynomster** | Lead developer, Core developer 
- **tecnovert** | Core developer 
- **crz** | Branding/Graphics, Shadow UI, UI/UX designer, Core developer 
- **ffmad** | General relations, Shadowproject websites, Core developer 
- **dasource** | Explorer, testing, infrastructure
- **ludx** | Explorer, testing, infrastructure 
- **Edu** | Media Liaison/PR, Community Manager
- **SebSebastian** | Media Liaison/PR, reddit
- **Code** | Shadowproject websites developer, Community manager
- **Allien** | Shadowproject websites designer, Front-end developer
- **wheatclove** | Bug testing, Apprentice
-
-### Former Members
-
-Name | What do I do ?
---- | --- 
-**St3bas** | Core developer
-**Trollsroyce** | Media Liaison/PR
-
-
-

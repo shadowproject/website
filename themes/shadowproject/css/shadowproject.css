@@ -437,7 +437,8 @@ table {
   table thead tr th {
     font-size: 0.8rem;
     text-transform: uppercase;
-    color: #9090a5; }
+    color: #9090a5;
+    background: none !important; }
   table tr th {
     font-family: "OpenSansBold", sans-serif;
     font-weight: normal; }
@@ -459,9 +460,9 @@ table {
     padding: 0.5rem 0.7rem;
     vertical-align: top;
     border-bottom: 1px solid #DFDFE6; }
-  table tr:first-child td {
+  table tr:first-child td, table tr:first-child th {
     border-top: 1px solid #DFDFE6; }
-  table tr:nth-child(2n+1) td {
+  table tr:nth-child(2n+1) td, table tr:nth-child(2n+1) th {
     background: #fcfcfd; }
 
 abbr[title] {

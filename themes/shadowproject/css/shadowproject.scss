@@ -71,6 +71,7 @@ table {
     tr {
       th {
         font-size: 0.8rem; text-transform: uppercase; color: darken($grey, 15%);
+        background: none !important;
       }
     }
   }
@@ -92,10 +93,10 @@ table {
       border-bottom: 1px solid $lightgrey;
     }
     &:first-child {
-      td { border-top: 1px solid $lightgrey; }
+      td, th { border-top: 1px solid $lightgrey; }
     }
     &:nth-child(2n+1) {
-      td { background: lighten($bg, 1.7%); }
+      td, th { background: lighten($bg, 1.7%); }
     }
   }
 }
