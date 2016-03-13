@@ -438,7 +438,8 @@ table {
     font-size: 0.8rem;
     text-transform: uppercase;
     color: #9090a5;
-    background: none !important; }
+    background: none !important;
+    border-top: none !important; }
   table tr th {
     font-family: "OpenSansBold", sans-serif;
     font-weight: normal; }
