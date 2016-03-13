@@ -94,8 +94,8 @@ table {
     &:first-child {
       td { border-top: 1px solid $lightgrey; }
     }
-    &:nth-child(2n) {
-      th, td { background: lighten($bg, 1.7%); }
+    &:nth-child(2n+1) {
+      td { background: lighten($bg, 1.7%); }
     }
   }
 }
@@ -289,9 +289,11 @@ dl {
   padding: 0.1rem 0.6rem; margin: 0 0.5rem;
 }
 
-#content ul.block-grid-3 {
-  margin-left: -$block-grid-spacing; margin-right: -$block-grid-spacing;
-  li::before { content: ""; }
+#content {
+  ul.block-grid-3, ul.block-grid-2 {
+    margin-left: -$block-grid-spacing; margin-right: -$block-grid-spacing;
+    li::before { content: ""; }
+  }
 }
 
 // forms

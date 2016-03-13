@@ -461,7 +461,7 @@ table {
     border-bottom: 1px solid #DFDFE6; }
   table tr:first-child td {
     border-top: 1px solid #DFDFE6; }
-  table tr:nth-child(2n) th, table tr:nth-child(2n) td {
+  table tr:nth-child(2n+1) td {
     background: #fcfcfd; }
 
 abbr[title] {
@@ -678,10 +678,10 @@ dl {
   padding: 0.1rem 0.6rem;
   margin: 0 0.5rem; }
 
-#content ul.block-grid-3 {
+#content ul.block-grid-3, #content ul.block-grid-2 {
   margin-left: -0.7rem;
   margin-right: -0.7rem; }
-  #content ul.block-grid-3 li::before {
+  #content ul.block-grid-3 li::before, #content ul.block-grid-2 li::before {
     content: ""; }
 
 form input, form textarea {

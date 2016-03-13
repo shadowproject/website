@@ -8,7 +8,7 @@ There are 2 main branches in this repo:
 * development = for devel, live on [lab.shadowproject.io](http://lab.shadowproject.io)
 
 
-### Sass compiling via Gulp [NOT YET]
+### Sass compiling via Gulp
 
 **Don't edit CSS directly!** This website is using Sass and all CSS changes will be discarded if edited directly. [Learn about Sass](http://sass-lang.com/guide) and [how to compile it to CSS automatically](https://css-tricks.com/gulp-for-beginners/).
 
