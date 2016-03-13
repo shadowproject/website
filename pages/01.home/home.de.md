@@ -1,5 +1,6 @@
 ---
 title: Home
+menu: About Shadow
 published: true
 process:
     markdown: true

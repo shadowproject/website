@@ -1,19 +1,20 @@
 ---
 title: Home
+menu: About Shadow
 published: true
 process:
     markdown: true
 child_type: default
 routable: true
 cache_enable: true
-visible: true
+visible: false
 ---
 
 ## SHADOWCASH SPECS.
 
 - Block time: **60** s
 - Difficulty re-target: **every block**
-- Nominal stake interest: **2%** ([PoSv3](https://blog.shadowproject.io/2016/03/07/development-update-march-phoenix/) – static inflation annually)
+- Nominal stake interest: **2%** annually
 - Min. stake age: **8 hours** (no max age)
 - P2P port: 51737
 - RPC port: 51736
