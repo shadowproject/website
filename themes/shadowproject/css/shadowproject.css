@@ -552,14 +552,18 @@ dl {
       margin-right: 1rem;
       border-width: 1px; }
   #content .press-logos {
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    display: table; }
     #content .press-logos .logo {
-      float: left;
-      margin-right: 1.5rem;
-      opacity: 0.5;
-      outline: none; }
+      padding: 0 1.5rem 0 0;
+      opacity: 0.4;
+      outline: none;
+      display: table-cell;
+      vertical-align: middle; }
       #content .press-logos .logo:hover {
         opacity: 1; }
+      #content .press-logos .logo a {
+        border: 0; }
 
 #sidebar {
   padding: 3rem 0; }

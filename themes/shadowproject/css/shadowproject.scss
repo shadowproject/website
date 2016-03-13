@@ -174,11 +174,14 @@ dl {
   .press-logos {
     @extend .clearfix;
     margin-bottom: 2rem;
+    display: table;
     .logo {
       @extend .tfx;
-      float: left; margin-right: 1.5rem;
-      opacity: 0.5; outline: none;
+      padding: 0 1.5rem 0 0;
+      opacity: 0.4; outline: none;
+      display: table-cell; vertical-align: middle;
       &:hover { opacity: 1; }
+      a { border: 0; }
     }
   }
 }
