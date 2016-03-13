@@ -67,8 +67,13 @@ blockquote {
 table {
   margin: 1.5rem 0 2.5rem;
   width: 100%;
-  thead tr th {
-    color: darken($grey, 15%); text-transform: uppercase; font-size: 0.8rem;
+  thead {
+    tr {
+      th {
+        font-size: 0.8rem; text-transform: uppercase; color: darken($grey, 15%);
+        background: none !important; border-top: none !important;
+      }
+    }
   }
   tr {
     th {
@@ -88,10 +93,10 @@ table {
       border-bottom: 1px solid $lightgrey;
     }
     &:first-child {
-      td { border-top: 1px solid $lightgrey; }
+      td, th { border-top: 1px solid $lightgrey; }
     }
-    &:nth-child(2n) {
-      th, td { background: lighten($bg, 1.7%); }
+    &:nth-child(2n+1) {
+      td, th { background: lighten($bg, 1.7%); }
     }
   }
 }
@@ -164,6 +169,20 @@ dl {
       font-size: 0.85rem; font-family: "Lato", sans-serif;
       padding: 0.2rem 1rem; margin-right: 1rem;
       border-width: 1px;
+    }
+  }
+  // In the Press (logos)
+  .press-logos {
+    @extend .clearfix;
+    margin-bottom: 2rem;
+    display: table;
+    .logo {
+      @extend .tfx;
+      padding: 0 1.5rem 0 0;
+      opacity: 0.4; outline: none;
+      display: table-cell; vertical-align: middle;
+      &:hover { opacity: 1; }
+      a { border: 0; }
     }
   }
 }
@@ -249,7 +268,7 @@ dl {
     @extend .clearfix;
     text-align: center;
     .os {
-      font-family: "LatoHeavy"; font-weight: normal; font-size: 1.3rem;
+      font-family: "LatoHeavy", sans-serif; font-weight: normal; font-size: 1.3rem;
       margin: 1.7rem 0;
       .icon {
         font-size: 1.4rem;
@@ -285,9 +304,11 @@ dl {
   padding: 0.1rem 0.6rem; margin: 0 0.5rem;
 }
 
-#content ul.block-grid-3 {
-  margin-left: -$block-grid-spacing; margin-right: -$block-grid-spacing;
-  li::before { content: ""; }
+#content {
+  ul.block-grid-4, ul.block-grid-3, ul.block-grid-2 {
+    margin-left: -$block-grid-spacing; margin-right: -$block-grid-spacing;
+    li::before { content: ""; }
+  }
 }
 
 // forms
@@ -311,8 +332,8 @@ form {
 .button, button {
   border-radius: 0; background: $red; border-bottom: 3px solid darken($red, 15%);
   margin-bottom: 1rem;
-  font-family: "LatoHeavy"; font-weight: normal; text-transform: uppercase;
-  span { font-family: "Lato"; font-weight: normal; }
+  font-family: "LatoHeavy", sans-serif; font-weight: normal; text-transform: uppercase;
+  span { font-family: "Lato", sans-serif; font-weight: normal; }
   .ico {
     margin-right: 0.4rem; font-size: 1rem; line-height: 1;
     position: relative; top: 2px;

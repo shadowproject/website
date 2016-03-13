@@ -156,12 +156,28 @@ h1, h2, h3, h4, h5 {
     float: left;
     margin: 0; } }
 
+ul.block-grid-4 {
+  margin: -0.7rem; }
+  ul.block-grid-4 > li {
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 0 0.7rem; }
+
 ul.block-grid-3 {
   margin: -0.7rem; }
   ul.block-grid-3 > li {
     display: block;
     float: left;
     width: 33.3333%;
+    padding: 0 0.7rem; }
+
+ul.block-grid-2 {
+  margin: -0.7rem; }
+  ul.block-grid-2 > li {
+    display: block;
+    float: left;
+    width: 50%;
     padding: 0 0.7rem; }
 
 input,
@@ -237,7 +253,7 @@ iframe {
 .text-center {
   text-align: center; }
 
-.tfx, .button, button, #footer .icon, form input, form textarea, a {
+.tfx, .button, button, #content .press-logos .logo, #footer .icon, form input, form textarea, a {
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
 
@@ -245,11 +261,11 @@ iframe {
   -webkit-transform: scale(1.1);
   transform: scale(1.1); }
 
-.clearfix::before, ul.block-grid-3::before, .box.wallet::before, .clearfix::after, ul.block-grid-3::after, .box.wallet::after {
+.clearfix::before, ul.block-grid-4::before, ul.block-grid-3::before, ul.block-grid-2::before, #content .press-logos::before, .box.wallet::before, .clearfix::after, ul.block-grid-4::after, ul.block-grid-3::after, ul.block-grid-2::after, #content .press-logos::after, .box.wallet::after {
   content: "";
   display: table; }
 
-.clearfix::after, ul.block-grid-3::after, .box.wallet::after {
+.clearfix::after, ul.block-grid-4::after, ul.block-grid-3::after, ul.block-grid-2::after, #content .press-logos::after, .box.wallet::after {
   clear: both; }
 
 .show-grid {
@@ -418,6 +434,12 @@ blockquote {
 table {
   margin: 1.5rem 0 2.5rem;
   width: 100%; }
+  table thead tr th {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #9090a5;
+    background: none !important;
+    border-top: none !important; }
   table tr th {
     font-family: "OpenSansBold", sans-serif;
     font-weight: normal; }
@@ -439,9 +461,9 @@ table {
     padding: 0.5rem 0.7rem;
     vertical-align: top;
     border-bottom: 1px solid #DFDFE6; }
-  table tr:first-child th, table tr:first-child td {
+  table tr:first-child td, table tr:first-child th {
     border-top: 1px solid #DFDFE6; }
-  table tr:nth-child(2n+1) th, table tr:nth-child(2n+1) td {
+  table tr:nth-child(2n+1) td, table tr:nth-child(2n+1) th {
     background: #fcfcfd; }
 
 abbr[title] {
@@ -531,6 +553,19 @@ dl {
       padding: 0.2rem 1rem;
       margin-right: 1rem;
       border-width: 1px; }
+  #content .press-logos {
+    margin-bottom: 2rem;
+    display: table; }
+    #content .press-logos .logo {
+      padding: 0 1.5rem 0 0;
+      opacity: 0.4;
+      outline: none;
+      display: table-cell;
+      vertical-align: middle; }
+      #content .press-logos .logo:hover {
+        opacity: 1; }
+      #content .press-logos .logo a {
+        border: 0; }
 
 #sidebar {
   padding: 3rem 0; }
@@ -615,7 +650,7 @@ dl {
   .box.wallet {
     text-align: center; }
     .box.wallet .os {
-      font-family: "LatoHeavy";
+      font-family: "LatoHeavy", sans-serif;
       font-weight: normal;
       font-size: 1.3rem;
       margin: 1.7rem 0; }
@@ -658,10 +693,10 @@ dl {
   padding: 0.1rem 0.6rem;
   margin: 0 0.5rem; }
 
-#content ul.block-grid-3 {
+#content ul.block-grid-4, #content ul.block-grid-3, #content ul.block-grid-2 {
   margin-left: -0.7rem;
   margin-right: -0.7rem; }
-  #content ul.block-grid-3 li::before {
+  #content ul.block-grid-4 li::before, #content ul.block-grid-3 li::before, #content ul.block-grid-2 li::before {
     content: ""; }
 
 form input, form textarea {
@@ -689,11 +724,11 @@ form.contact {
   background: #E2213D;
   border-bottom: 3px solid #a11529;
   margin-bottom: 1rem;
-  font-family: "LatoHeavy";
+  font-family: "LatoHeavy", sans-serif;
   font-weight: normal;
   text-transform: uppercase; }
   .button span, button span {
-    font-family: "Lato";
+    font-family: "Lato", sans-serif;
     font-weight: normal; }
   .button .ico, button .ico {
     margin-right: 0.4rem;
