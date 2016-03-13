@@ -4,9 +4,9 @@ title: 'Bug Bounties'
 
 ## SHADOW BUG & BOUNTY PROGRAM
 
-According to **[Linus’ Law](http://en.wikipedia.org/wiki/Linus)**, _“given enough eyeballs, all bugs are shallow”_. That’s one of the reasons why Shadow’s source code is publicly available; but merely making the source code available doesn’t accomplish anything if people don’t read it!
+According to [Linus’ Law](http://en.wikipedia.org/wiki/Linus), _“given enough eyeballs, all bugs are shallow”_. That’s one of the reasons why Shadow’s source code is publicly available; but merely making the source code available doesn’t accomplish anything if people don’t read it!
 
-For this reason, Shadow has a series of bug bounties. Similar to the bounties offered by **[Mozilla](http://www.mozilla.org/security/bug-bounty.html)** and **[Google](http://blog.chromium.org/2010/01/encouraging-more-chromium-security.html)**, Shadow bug bounties provide an opportunity for people who find bugs to be compensated. Unlike those programs, however, Shadow’s bounties are not limited to security vulnerabilities.
+For this reason, Shadow has a series of bug bounties. Similar to the bounties offered by [Mozilla](http://www.mozilla.org/security/bug-bounty.html) and [Google](http://blog.chromium.org/2010/01/encouraging-more-chromium-security.html), Shadow bug bounties provide an opportunity for people who find bugs to be compensated. Unlike those programs, however, Shadow’s bounties are not limited to security vulnerabilities.
 
 Depending on the type of bug and when it is reported, different bounties will be awarded. Bounties are paid out in SDC, at the 3-day average of each to a fixed US Dollar value.
 
@@ -32,6 +32,8 @@ Depending on the type of bug and when it is reported, different bounties will be
 
 Depending on the type of bug and when it is reported, different bounties will be awarded. Bounties are paid out in SDC, at the 3-day average of each to a fixed US Dollar value.
 
+**Please do not report security vulnerabilities publicly.**
+
 Reward | Bug
 --- | ---
 **$1500** | Deanonymize ShadowChat or ShadowSend (proof that a protocol is not anonymous)
@@ -40,6 +42,6 @@ Reward | Bug
 **$250** | A bug which causes data corruption or loss
 **$100** | A bug which causes the application to crash
 **$50**	| Other non-harmless bugs
-**$10**	| ‘Harmless’ bugs, e.g. cosmetic errors
+**$10**	| 'Harmless' bugs, e.g. cosmetic errors
 
-<div class="message"> <em>Note</em> — Bounties will be paid out for bugs found in the <a href="https://github.com/ShadowProject/shadow/tree/master">master branch of the official GitHub repositories</a> (en)</div>
+<div class="message"><em>Note</em> — Bounties will be paid out for bugs found in the <a href="https://github.com/ShadowProject/shadow/tree/master">master branch of the official GitHub repositories</a> (en)</div>
