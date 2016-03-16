@@ -275,6 +275,10 @@ dl {
         margin-right: 0.7rem;
         position: relative; top: 1px;
       }
+      .desc {
+        font-size: 0.85rem; text-transform: uppercase;
+        font-family: "Lato", sans-serif; color: darken($grey, 15%);
+      }
     }
     .button {
       color: $black;
