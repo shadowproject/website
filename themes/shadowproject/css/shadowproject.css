@@ -659,6 +659,11 @@ dl {
         margin-right: 0.7rem;
         position: relative;
         top: 1px; }
+      .box.wallet .os .desc {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        font-family: "Lato", sans-serif;
+        color: #9090a5; }
     .box.wallet .button {
       color: #1C1C21;
       width: 100%;
