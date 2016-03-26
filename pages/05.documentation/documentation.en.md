@@ -6,9 +6,9 @@ title: Documentation
 
 ### Whitepapers
 
-- **[ShadowSend v2](http://shadowproject.io/whitepapers/shadowcash-anon.pdf)** (PDF) <br>
+- **[ShadowSend v2](https://shadowproject.io/whitepapers/shadowcash-anon.pdf)** (PDF) <br>
 _Shadow: Zero-knowledge Anonymous Distributed Electronic Cash via Traceable Ring Signatures_
-- **[ShadowChat](http://shadowproject.io/whitepapers/shadowcash-p2p-messaging.pdf)** (PDF) <br>
+- **[ShadowChat](https://shadowproject.io/whitepapers/shadowcash-p2p-messaging.pdf)** (PDF) <br>
 _ShadowChat Secure Messaging: A P2P Encrypted Instant Messaging System_
 
 ### Guides & Tutorials
