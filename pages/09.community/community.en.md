@@ -9,9 +9,8 @@ title: Community
 ### Websites
 
 - [blog.shadowproject.io](http://blog.shadowproject.io) – Official blog
-- [doc.shadowproject.io](http://doc.shadowproject.io) – Technical documentation
+- [doc.shadowproject.io](http://doc.shadowproject.io) – Wiki & Technical documentation
 - [explorer.shadowproject.io](http://explorer.shadowproject.io) - Official Explorer _(soon)_
-- [Wiki](http://shadowcash.info)
 
 ### Join the Community
 
