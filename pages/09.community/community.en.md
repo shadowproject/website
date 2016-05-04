@@ -15,7 +15,7 @@ title: Community
 
 ### Join the Community
 
-- [Slack](https://shadowproject.slack.com/) – join our conversations ([get invite here](http://shadowproject.herokuapp.com/))
+- [Slack](https://shadowproject.slack.com/) – join our conversations ([get invite here](https://slack.shadowproject.io/))
 - **IRC** – prefer IRC? #shadowcash on freenode.net
 - [Shadow Project forum](https://talk.shadowproject.io/) ([BitcoinTalk thread](https://bitcointalk.org/index.php?topic=745352)
 - [r/ShadowCash](http://reddit.com/r/shadowcash) on Reddit
