@@ -520,7 +520,8 @@ dl {
   padding: 0.2rem 1rem;
   font-size: 0.8rem;
   text-transform: uppercase;
-  color: #BABAC7; }
+  color: #BABAC7;
+  text-align: right; }
   #network-bar a {
     color: #BABAC7;
     border: none;
