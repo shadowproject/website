@@ -10,7 +10,7 @@ title: Community
 
 - [blog.shadowproject.io](http://blog.shadowproject.io) – Official blog
 - [doc.shadowproject.io](http://doc.shadowproject.io) – Wiki & Technical documentation
-- [explorer.shadowproject.io](http://explorer.shadowproject.io) - Official Explorer _(soon)_
+- [explorer.shadow.cash](http://explorer.shadow.cash/) - Official Explorer
 
 ### Join the Community
 

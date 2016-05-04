@@ -508,7 +508,7 @@ dl {
   #content ul li {
     position: relative; }
     #content ul li::before {
-      content: "ÔÇó";
+      content: "•";
       position: absolute;
       left: -1.9rem;
       top: -4px;
