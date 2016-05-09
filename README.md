@@ -1,5 +1,7 @@
 # ShadowProject.io
 
+[![Join the chat at https://gitter.im/shadowproject/website](https://badges.gitter.im/shadowproject/website.svg)](https://gitter.im/shadowproject/website?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Devel & Contributions
 
 There are 2 main branches in this repo:
