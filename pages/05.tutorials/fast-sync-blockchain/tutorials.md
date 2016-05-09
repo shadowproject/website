@@ -1,8 +1,8 @@
 ---
 title: Faster sync with blockchain.zip
 visible: false
-author:
-    name: Code
+meta:
+    author: Code
     updated: 9/5 2016
 ---
 
