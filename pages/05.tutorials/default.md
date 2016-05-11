@@ -12,3 +12,7 @@ title: Tutorials
 ### Security
 
 * [How to validate SHA256 checksums of official Shadow releases](validate-checksums-of-releases/) – so you won't get scammed downloading malware-infected release
+
+### Power-ups
+
+* [Compile Shadow Daemon on Raspberry Pi 2 (Raspbian Jessie) and beyond](shadow-daemon-rasberry-pi2/)
