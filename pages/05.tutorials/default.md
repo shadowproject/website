@@ -15,4 +15,4 @@ title: Tutorials
 
 ### Power-ups
 
-* [Compile Shadow Daemon on Raspberry Pi 2 (Raspbian Jessie) and beyond](shadow-daemon-rasberry-pi2/)
+* [Compile Shadow Daemon on Raspberry Pi 2](shadow-daemon-raspberry-pi2/) (Raspbian Jessie) and beyond
