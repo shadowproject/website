@@ -268,6 +268,39 @@ dl {
 }
 
 
+// ------ SPECIFIC ------ //
+
+// team members
+.member {
+  @extend .tfx;
+  text-align: center;
+  padding: 1.5rem 0.5rem;
+  .avatar {
+    background: $grey; border-radius: 50%;
+    width: 8rem; height: 8rem; margin: 0 auto 1rem;
+    overflow: hidden;
+  }
+  .text {
+    font-size: 0.85rem;
+    .name { font-family: "LatoHeavy", sans-serif; font-size: 1.1rem; }
+    .contact { color: darken($grey, 10%); margin-top: 0.2rem; }
+    .donate {
+      @extend .tfx;
+      font-size: 0.8rem;
+      margin-top: 0.8rem;
+      opacity: 0;
+      input {
+        width: 3.5rem; margin: 0 0.7rem 0 0.4rem;
+        background: #fff; border: 1px solid #ccc; border-radius: 4px;
+      }
+    }
+  }
+  &:hover {
+    background: #fff; box-shadow: 0 2px 4px rgba($grey, 0.4);
+    .donate { opacity: 1; }
+  }
+}
+
 
 // ------ UI & HELPER ------ //
 
