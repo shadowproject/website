@@ -274,7 +274,7 @@ dl {
 .member {
   @extend .tfx;
   text-align: center;
-  padding: 1.5rem 0.5rem;
+  padding: 1.5rem 0.5rem !important;
   .avatar {
     background: $grey; border-radius: 50%;
     width: 8rem; height: 8rem; margin: 0 auto 1rem;
