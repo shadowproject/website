@@ -707,6 +707,7 @@ dl {
       .member .text .donate input {
         width: 3.5rem;
         margin: 0 0.7rem 0 0.4rem;
+        padding: 0.1rem 0.35rem;
         background: #fff;
         border: 1px solid #ccc;
         border-radius: 4px; }
