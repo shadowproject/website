@@ -283,7 +283,10 @@ dl {
   .text {
     font-size: 0.85rem;
     .name { font-family: "LatoHeavy", sans-serif; font-size: 1.1rem; }
-    .contact { color: darken($grey, 10%); margin-top: 0.2rem; }
+    .contact {
+      @extend .tfx; opacity: 0; color: darken($grey, 10%); margin-top: 0.2rem;
+      a { font-size: 0.75rem; border: none; color: #9e9eb0; }
+    }
     .donate {
       @extend .tfx;
       font-size: 0.8rem;
@@ -297,7 +300,7 @@ dl {
   }
   &:hover {
     background: #fff; box-shadow: 0 2px 4px rgba($grey, 0.4);
-    .donate { opacity: 1; }
+    .contact, .donate { opacity: 1; }
   }
 }
 

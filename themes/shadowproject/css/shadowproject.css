@@ -279,7 +279,7 @@ iframe {
 .text-center {
   text-align: center; }
 
-.tfx, .button, button, #content .press-logos .logo, #footer .icon, .member, .member .text .donate, form input, form textarea, a {
+.tfx, .button, button, #content .press-logos .logo, #footer .icon, .member, .member .text .contact, .member .text .donate, form input, form textarea, a {
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
 
@@ -698,8 +698,13 @@ dl {
       font-family: "LatoHeavy", sans-serif;
       font-size: 1.1rem; }
     .member .text .contact {
+      opacity: 0;
       color: #9e9eb0;
       margin-top: 0.2rem; }
+      .member .text .contact a {
+        font-size: 0.75rem;
+        border: none;
+        color: #9e9eb0; }
     .member .text .donate {
       font-size: 0.8rem;
       margin-top: 0.8rem;
@@ -714,7 +719,7 @@ dl {
   .member:hover {
     background: #fff;
     box-shadow: 0 2px 4px rgba(186, 186, 199, 0.4); }
-    .member:hover .donate {
+    .member:hover .contact, .member:hover .donate {
       opacity: 1; }
 
 .box {
