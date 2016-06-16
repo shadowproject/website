@@ -395,7 +395,8 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-family: "LatoHeavy", sans-serif;
-  font-weight: normal; }
+  font-weight: normal;
+  line-height: 1.5; }
 
 h1 {
   font-size: 1.5rem;
@@ -441,14 +442,25 @@ em {
   font-style: normal; }
 
 pre {
-  white-space: pre-line; }
+  white-space: pre-line;
+  background: #1C1C21;
+  border-radius: 3px;
+  padding: 0.7rem 1.5rem;
+  line-height: 1.4; }
+  pre code {
+    background: none;
+    font-size: 0.8rem;
+    color: #BABAC7;
+    padding: 0;
+    margin: 0; }
 
 code {
   font-size: 0.9rem;
-  color: #777;
-  background: #fff;
+  color: #7C7C95;
+  background: #DFDFE6;
   border-radius: 3px;
-  padding: 0.1rem 0.5rem; }
+  padding: 0.15rem 0.4rem;
+  margin: 0 0.15rem; }
 
 blockquote {
   font-family: "OpenSansItalic", sans-serif;
@@ -693,7 +705,7 @@ dl {
     margin: 0 auto 1rem;
     overflow: hidden; }
   .member .text {
-    font-size: 0.85rem; }
+    font-size: 0.8rem; }
     .member .text .name {
       font-family: "LatoHeavy", sans-serif;
       font-size: 1.1rem; }
@@ -761,6 +773,19 @@ dl {
         border-right: 1px solid #dadae3; }
         .box.wallet .button.split:last-child {
           border-right: 0; }
+
+.meta {
+  font-size: 0.85rem;
+  color: #BABAC7; }
+  .meta p {
+    margin: 0 0 0.2rem; }
+
+.actions {
+  margin-top: 2rem; }
+  .actions .button.secondary {
+    font-size: 0.85rem;
+    font-family: "Lato", sans-serif;
+    padding: 0.35rem 1rem; }
 
 .message {
   margin: 1.5rem 0 2rem;

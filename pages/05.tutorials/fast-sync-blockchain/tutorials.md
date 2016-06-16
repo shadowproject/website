@@ -12,9 +12,9 @@ meta:
 2. Download [blockchain.zip](https://github.com/ShadowProject/blockchain/releases/download/latest/blockchain.zip) from Shadow GitHub (don't trust any links outside ShadowProject on GitHub!)
 3. Delete ```blk001.dat```, ```txleveldb``` from Shadowcoin app directory
 
-    * Windows: %appdata%\ShadowCoin
-    * Linux: ~/.shadowcoin
-    * OSX: ~/Library/Application Support/ShadowCoin
+| Windows | ```%appdata%\ShadowCoin``` |
+| Linux | ```~/.shadowcoin``` |
+| OSX | ```~/Library/Application Support/ShadowCoin``` |
 
 4. Extract downloaded file into Shadowcoin app directory
 5. Launch Wallet again (let it run even if it becomes unresponsive)
