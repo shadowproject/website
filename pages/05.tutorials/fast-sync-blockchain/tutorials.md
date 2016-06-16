@@ -12,6 +12,7 @@ meta:
 2. Download [blockchain.zip](https://github.com/ShadowProject/blockchain/releases/download/latest/blockchain.zip) from Shadow GitHub (don't trust any links outside ShadowProject on GitHub!)
 3. Delete ```blk001.dat```, ```txleveldb``` from Shadowcoin app directory
 
+| OS | Path to directory |
 | ------ | ------ |
 | Windows | ```%appdata%\ShadowCoin``` |
 | Linux | ```~/.shadowcoin``` |
