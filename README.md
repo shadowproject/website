@@ -16,9 +16,11 @@ There are 2 main branches in this repo:
 
 If you don't want to mess with Gulp, just edit the Sass files and ask someone else to compile it (e.g. @AllienWorks)
 
-Here's a short version (WIP, might not be correct):
+Here's a short version:
 
-- navigate to the Project in Terminal and type ```npm install gulp --save-dev``` (this will download all the modules and dependencies; you need this to run only the first time)
+- you'll need [NPM](https://nodejs.org/), so install it if you don't
+    - don't have Gulp installed? install it via ```sudo npm install gulp -g``` (the "-g" part makes sure its installed globally on your system - you can leave it out)
+- install Gulp to the Project: navigate to the Project in Terminal and type ```npm install gulp --save-dev``` (this will download all the modules and dependencies; you need this to run only the first time)
 - then install Sass module via ```npm install gulp-sass --save-dev``` (also run just once)
 - now all you need to do is start ```gulp``` - it will automatically watch for file changes and compile them immediately (let it run in terminal and try modifying some SCSS and save it)
 

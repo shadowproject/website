@@ -4,7 +4,7 @@ title: Features
 
 ## SHADOWSEND
 
-ShadowSend’s **anonymous cryptographic transaction protocol** uses dual-key stealth addresses, traceable ring signatures layered with non-interactive zero knowledge proofs (**[presentation of the anonymous cryptographic transaction protocol](http://www.slideshare.net/shadowcash/presentation3-43827434)** which utilizes the above mentioned cryptographic principles). We explain how Shadow introduces a much higher level of privacy and anonymity to the network while still preserving the core principles of trustless decentralization, unforgeability and double­spend prevention. We also presented performance data of our scheme including proof sizes, signature generation times and verification times in our **[ShadowSend Whitepaper](https://github.com/shadowproject/whitepapers/releases/download/1.0/ShadowSend.pdf)**.
+ShadowSend’s **anonymous cryptographic transaction protocol** uses dual-key stealth addresses, traceable ring signatures (**[presentation of the anonymous cryptographic transaction protocol](http://www.slideshare.net/shadowcash/presentation3-43827434)** which utilizes the above mentioned cryptographic principles). We explain how Shadow introduces a much higher level of privacy and anonymity to the network while still preserving the core principles of trustless decentralization, unforgeability and double­spend prevention. We also presented performance data of our scheme including proof sizes, signature generation times and verification times in our **[ShadowSend Whitepaper](https://github.com/shadowproject/whitepapers/releases/download/1.0/ShadowSend.pdf)**.
 
 - **[ShadowSend Diagram](http://i.imgur.com/2XTQhYF.jpg)**
 

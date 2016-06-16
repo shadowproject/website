@@ -25,7 +25,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: "LatoHeavy", sans-serif; font-weight: normal;
+  font-family: "LatoHeavy", sans-serif; font-weight: normal; line-height: 1.5;
 }
 h1 {
   font-size: 1.5rem; color: $red; text-transform: uppercase;
@@ -52,12 +52,20 @@ b, strong, p.lead { font-family: "OpenSansBold", sans-serif; font-weight: normal
 em { font-family: "OpenSansItalic", sans-serif; font-style: normal; }
 
 pre {
-    white-space: pre-line;
+  white-space: pre-line;
+  background: $black; border-radius: 3px;
+  padding: 0.7rem 1.5rem;
+  line-height: 1.4;
+  code {
+    background: none;
+    font-size: 0.8rem; color: $grey;
+    padding: 0; margin: 0;
+  }
 }
 code {
-  font-size: 0.9rem; color: #777;
-  background: #fff; border-radius: 3px;
-  padding: 0.1rem 0.5rem;
+  font-size: 0.9rem; color: #7C7C95;
+  background: $lightgrey; border-radius: 3px;
+  padding: 0.15rem 0.4rem; margin: 0 0.15rem;
 }
 blockquote {
   font-family: "OpenSansItalic", sans-serif; color: lighten($black, 30%);
@@ -268,6 +276,42 @@ dl {
 }
 
 
+// ------ SPECIFIC ------ //
+
+// team members
+.member {
+  @extend .tfx;
+  text-align: center;
+  padding: 1.5rem 0.5rem !important;
+  .avatar {
+    background: $grey; border-radius: 50%;
+    width: 8rem; height: 8rem; margin: 0 auto 1rem;
+    overflow: hidden;
+  }
+  .text {
+    font-size: 0.8rem;
+    .name { font-family: "LatoHeavy", sans-serif; font-size: 1.1rem; }
+    .contact {
+      @extend .tfx; opacity: 0; color: darken($grey, 10%); margin-top: 0.2rem;
+      a { font-size: 0.75rem; border: none; color: #9e9eb0; }
+    }
+    .donate {
+      @extend .tfx;
+      font-size: 0.8rem;
+      margin-top: 0.8rem;
+      opacity: 0;
+      input {
+        width: 3.5rem; margin: 0 0.7rem 0 0.4rem; padding: 0.1rem 0.35rem;
+        background: #fff; border: 1px solid #ccc; border-radius: 4px;
+      }
+    }
+  }
+  &:hover {
+    background: #fff; box-shadow: 0 2px 4px rgba($grey, 0.4);
+    .contact, .donate { opacity: 1; }
+  }
+}
+
 
 // ------ UI & HELPER ------ //
 
@@ -302,6 +346,24 @@ dl {
         border-right: 1px solid darken($bg, 10%);
         &:last-child { border-right: 0; }
       }
+    }
+  }
+}
+
+// meta
+.meta {
+  font-size: 0.85rem; color: $grey;
+  p { margin: 0 0 0.2rem; }
+}
+
+
+// action buttons
+.actions {
+  margin-top: 2rem; 
+  .button {
+    &.secondary {
+      font-size: 0.85rem; font-family: "Lato", sans-serif;
+      padding: 0.35rem 1rem;
     }
   }
 }
