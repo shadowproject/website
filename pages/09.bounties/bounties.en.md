@@ -41,7 +41,5 @@ Reward | Bug
 **$500** | A bug in the reference client that leads to consensus issues
 **$250** | A bug which causes data corruption or loss
 **$100** | A bug which causes the application to crash
-**$50**	| Other non-harmless bugs
-**$10**	| 'Harmless' bugs, e.g. cosmetic errors
 
 <div class="message"><em>Note</em> — Bounties will be paid out for bugs found in the <a href="https://github.com/ShadowProject/shadow/tree/master">master branch of the official GitHub repositories</a> (en)</div>
