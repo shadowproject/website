@@ -8,6 +8,7 @@
     <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
     {% include 'partials/metadata.html.twig' %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-Frame-Options" content="deny">
     <meta property="og:title" content="Shadow Project" />
     <meta property="og:description" content="The Shadow Project is an open source project aiming to be the core of privacy, where people will build decentralized applications" />
     <meta property="og:url" content="http://shadowproject.io" />
@@ -29,6 +30,17 @@
 {% endblock head%}
 </head>
 <body id="top" class="{{ page.header.body_classes }}">
+
+    <div id="network-bar">
+        Quick links:
+        <a href="https://shadowproject.io/en/gettingstarted">Downloads</a>
+        <a href="http://explorer.shadow.cash">Block Explorer</a>
+        <a href="https://blog.shadowproject.io">Blog</a>
+        <a href="https://doc.shadowproject.io">Docs</a>
+        <a href="https://shadowproject.slack.com">Slack</a>+<a href="https://slack.shadowproject.io">Get Invite</a>
+        <a href="https://talk.shadowproject.io">Forum</a>
+        <a href="https://github.com/shadowproject">GitHub</a>
+    </div><!-- #network-bar -->
 
     <div id="header">
         <div class="row">
@@ -83,7 +95,7 @@
                 {% block showcase %}{% endblock %}
                 {% block content %}{% endblock %}
                 <div class="edit-me">
-                    <a href="https://github.com/shadowproject/shadowproject.github.io/" class="secondary button">{{ "EDIT_PAGE"|t }}</a> {{ "EDIT_MORE"|t }}
+                    <a href="https://github.com/shadowproject/website/" class="secondary button">{{ "EDIT_PAGE"|t }}</a> {{ "EDIT_MORE"|t }}
                 </div>
             </div><!-- #content -->
         </div>

@@ -3,40 +3,47 @@
 {% block content %}
 	<h2>{{ "DL_TITLE"|t }}</h2>
 	
-	<p>{{ "DL_LATEST"|t }}: <strong id="latest-version">1.4.0.1</strong></p>
+	<p>{{ "DL_LATEST"|t }}: <strong id="latest-version">1.5.0</strong></p>
 	<ul class="block-grid-3">
 		<li>
 			<div class="box wallet">
 				<div class="os"><i class="icon ico-win"></i>Windows</div>
-				<a href="https://github.com/shadowproject/shadow/releases/download/v1.4.0.1/shadow_1.4.0.1_win64.zip" title="{{ "DL_W64"|t }}" class="split button">x64</a>
-				<a href="https://github.com/shadowproject/shadow/releases/download/v1.4.0.1/shadow_1.4.0.1_win32.zip" title="{{ "DL_W32"|t }}" class="split button">x32</a>
+				<a href="https://github.com/shadowproject/shadow/releases/download/v1.5.0.0/umbra_1.5.0.0_win64.zip" title="{{ "DL_W64"|t }}" class="split button">x64</a>
+				<a href="https://github.com/shadowproject/shadow/releases/download/v1.5.0.0/umbra_1.5.0.0_win32.zip" title="{{ "DL_W32"|t }}" class="split button">x32</a>
 			</div>
 		</li>
 		<li>
 			<div class="box wallet">
 				<div class="os"><i class="icon ico-linux"></i>Linux</div>
-				<a href="https://github.com/shadowproject/shadow/releases/download/v1.4.0.1/shadow_1.4.0.1_linux.zip" title="{{ "DL_L64"|t }}" class="split button">x64</a>
-				<a href="https://github.com/shadowproject/shadow/releases/download/v1.4.0.1/shadow_1.4.0.1_linux.zip" title="{{ "DL_L32"|t }}" class="split button">x32</a>
+				<a href="https://github.com/shadowproject/shadow/releases/download/v1.5.0.0/umbra_1.5.0.0_linux.zip" title="{{ "DL_L64"|t }}" class="button">{{ "DL"|t }}</a>
+				<!--a href="https://github.com/shadowproject/shadow/releases/download/v1.4.0.3/shadow_1.4.0.3_linux.zip" title="{{ "DL_L32"|t }}" class="split button">x32</a-->
 			</div>
 		</li>
 		<li>
 			<div class="box wallet">
 				<div class="os"><i class="icon ico-mac"></i>MacOS X</div>
-				<a href="https://github.com/shadowproject/shadow/releases/download/v1.4.0.1/shadow_1.4.0.1_macosx.dmg" title="{{ "DL_OSX"|t }}" class="button">{{ "DL"|t }}</a>
+				<a href="https://github.com/shadowproject/shadow/releases/download/v1.5.0.0/umbra_1.5.0.0_macosx.dmg" title="{{ "DL_OSX"|t }}" class="button">{{ "DL"|t }}</a>
 			</div>
 		</li>
 	</ul>
 
-	<h2>Mobile Wallets{#{ "DL_MOBILE_TITLE"|t }#}</h2>
+	<div class="message">
+		Pro Tip — <a href="https://github.com/shadowproject/blockchain">Download the blockchain</a> separately, to get in sync in minutes!
+	</div>
+
+	<!--h2>Mobile Wallets{#{ "DL_MOBILE_TITLE"|t }#}</h2>
 	<ul class="block-grid-2">
 		<li>
 			<div class="box wallet">
-				<div class="os"><!--i class="icon ico-android"></i-->Android</div>
-				<a href="https://play.google.com/store/apps/details?id=com.coinomi.wallet" title="{{ "DL_COINOMI_GPLAY"|t }}" class="split button">Google Play</a>
-				<a href="https://github.com/Coinomi/coinomi-android/releases/latest" title="{{ "DL_COINOMI_APK"|t }}" class="split button">.APK</a>
+				<div class="os">
+					Android
+					<div class="desc">Coinomi Wallet</div>
+				</div>
+				<a href="https://play.google.com/store/apps/details?id=com.coinomi.wallet" title="Download Coinomi Wallet from Google Play Store" class="split button">Google Play</a>
+				<a href="https://github.com/Coinomi/coinomi-android/releases/latest" title="Download Coinomi Wallet APK directly" class="split button">.APK</a>
 			</div>
 		</li>
-	</ul>
+	</ul-->
 
 	{{ page.content }}
 {% endblock %}

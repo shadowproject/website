@@ -18,3 +18,9 @@ You can also pay with ShadowCash (SDC) anywhere Bitcoin (BTC) is accepted instan
 ## GUIDES & DOCUMENTATION
 
 For guides and technical documentation please refer to **[doc.shadowproject.io](https://doc.shadowproject.io)**
+
+## Block Explorers
+
+- [explorer.shadow.cash](http://explorer.shadow.cash/) &ndash; Official Explorer
+- [chainz.cryptoid.info](https://chainz.cryptoid.info/sdc/) &ndash; SDC at CryptoID
+- [insight.shadow.cash](http://insight.shadow.cash/) &ndash; Insight Block Explorer

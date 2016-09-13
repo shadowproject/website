@@ -167,12 +167,13 @@ h1, h2, h3, h4, h5 {
 }
 
 // Block Grid (deeply borrowed from Foundation as well :)
-ul.block-grid-4 {
+ul.block-grid-2 {
 	@extend .clearfix;
 	margin: 0 -$block-grid-spacing;
 	& > li {
 		display: block; float: left;
-		width: 25%; padding: 0 $block-grid-spacing;
+		width: (100%/2); padding: 0 $block-grid-spacing;
+		&:nth-of-type(2n+1) { clear: both; }
 	}
 }
 
@@ -181,16 +182,38 @@ ul.block-grid-3 {
 	margin: 0 -$block-grid-spacing;
 	& > li {
 		display: block; float: left;
-		width: 33.3333%; padding: 0 $block-grid-spacing;
+		width: (100%/3); padding: 0 $block-grid-spacing;
+		&:nth-of-type(3n+1) { clear: both; }
 	}
 }
 
-ul.block-grid-2 {
+ul.block-grid-4 {
 	@extend .clearfix;
 	margin: 0 -$block-grid-spacing;
 	& > li {
 		display: block; float: left;
-		width: 50%; padding: 0 $block-grid-spacing;
+		width: (100%/4); padding: 0 $block-grid-spacing;
+		&:nth-of-type(4n+1) { clear: both; }
+	}
+}
+
+ul.block-grid-5 {
+	@extend .clearfix;
+	margin: 0 -$block-grid-spacing;
+	& > li {
+		display: block; float: left;
+		width: (100%/5); padding: 0 $block-grid-spacing;
+		&:nth-of-type(5n+1) { clear: both; }
+	}
+}
+
+ul.block-grid-6 {
+	@extend .clearfix;
+	margin: 0 -$block-grid-spacing;
+	& > li {
+		display: block; float: left;
+		width: (100%/6); padding: 0 $block-grid-spacing;
+		&:nth-of-type(6n+1) { clear: both; }
 	}
 }
 

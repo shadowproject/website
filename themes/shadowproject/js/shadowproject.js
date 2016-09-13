@@ -17,6 +17,7 @@ $( document ).ready(function() {
 
 
   // JSON grabbin' of latest Wallet version
+  /*
   function latestVersion() {
     var url = 'http://shadow.cash/downloads/latest/version/callback=?',
         container = document.getElementById('latest-version');
@@ -29,6 +30,7 @@ $( document ).ready(function() {
   if($('#latest-version').length > 0) {
     latestVersion();
   };
+  */
 
 
   // Intro video responsive scaling

@@ -1,0 +1,13 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+  <div class="meta">
+    <p>Author: {{ page.header.meta.author }} | Updated: {{ page.header.meta.updated }}</p>
+  </div>
+
+  {{ page.content }}
+
+  <div class="actions">
+    <p><a href="/tutorials" class="secondary button">Back to all Tutorials</a></p>
+  </div>
+{% endblock %}

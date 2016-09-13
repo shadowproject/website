@@ -156,22 +156,6 @@ h1, h2, h3, h4, h5 {
     float: left;
     margin: 0; } }
 
-ul.block-grid-4 {
-  margin: -0.7rem; }
-  ul.block-grid-4 > li {
-    display: block;
-    float: left;
-    width: 25%;
-    padding: 0 0.7rem; }
-
-ul.block-grid-3 {
-  margin: -0.7rem; }
-  ul.block-grid-3 > li {
-    display: block;
-    float: left;
-    width: 33.3333%;
-    padding: 0 0.7rem; }
-
 ul.block-grid-2 {
   margin: -0.7rem; }
   ul.block-grid-2 > li {
@@ -179,6 +163,48 @@ ul.block-grid-2 {
     float: left;
     width: 50%;
     padding: 0 0.7rem; }
+    ul.block-grid-2 > li:nth-of-type(2n+1) {
+      clear: both; }
+
+ul.block-grid-3 {
+  margin: -0.7rem; }
+  ul.block-grid-3 > li {
+    display: block;
+    float: left;
+    width: 33.33333%;
+    padding: 0 0.7rem; }
+    ul.block-grid-3 > li:nth-of-type(3n+1) {
+      clear: both; }
+
+ul.block-grid-4 {
+  margin: -0.7rem; }
+  ul.block-grid-4 > li {
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 0 0.7rem; }
+    ul.block-grid-4 > li:nth-of-type(4n+1) {
+      clear: both; }
+
+ul.block-grid-5 {
+  margin: -0.7rem; }
+  ul.block-grid-5 > li {
+    display: block;
+    float: left;
+    width: 20%;
+    padding: 0 0.7rem; }
+    ul.block-grid-5 > li:nth-of-type(5n+1) {
+      clear: both; }
+
+ul.block-grid-6 {
+  margin: -0.7rem; }
+  ul.block-grid-6 > li {
+    display: block;
+    float: left;
+    width: 16.66667%;
+    padding: 0 0.7rem; }
+    ul.block-grid-6 > li:nth-of-type(6n+1) {
+      clear: both; }
 
 input,
 textarea,
@@ -253,7 +279,7 @@ iframe {
 .text-center {
   text-align: center; }
 
-.tfx, .button, button, #content .press-logos .logo, #footer .icon, form input, form textarea, a {
+.tfx, .button, button, #content .press-logos .logo, #footer .icon, .member, .member .text .contact, .member .text .donate, form input, form textarea, a {
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
 
@@ -261,11 +287,11 @@ iframe {
   -webkit-transform: scale(1.1);
   transform: scale(1.1); }
 
-.clearfix::before, ul.block-grid-4::before, ul.block-grid-3::before, ul.block-grid-2::before, #content .press-logos::before, .box.wallet::before, .clearfix::after, ul.block-grid-4::after, ul.block-grid-3::after, ul.block-grid-2::after, #content .press-logos::after, .box.wallet::after {
+.clearfix::before, ul.block-grid-2::before, ul.block-grid-3::before, ul.block-grid-4::before, ul.block-grid-5::before, ul.block-grid-6::before, #content .press-logos::before, .box.wallet::before, .clearfix::after, ul.block-grid-2::after, ul.block-grid-3::after, ul.block-grid-4::after, ul.block-grid-5::after, ul.block-grid-6::after, #content .press-logos::after, .box.wallet::after {
   content: "";
   display: table; }
 
-.clearfix::after, ul.block-grid-4::after, ul.block-grid-3::after, ul.block-grid-2::after, #content .press-logos::after, .box.wallet::after {
+.clearfix::after, ul.block-grid-2::after, ul.block-grid-3::after, ul.block-grid-4::after, ul.block-grid-5::after, ul.block-grid-6::after, #content .press-logos::after, .box.wallet::after {
   clear: both; }
 
 .show-grid {
@@ -369,7 +395,8 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-family: "LatoHeavy", sans-serif;
-  font-weight: normal; }
+  font-weight: normal;
+  line-height: 1.5; }
 
 h1 {
   font-size: 1.5rem;
@@ -415,14 +442,25 @@ em {
   font-style: normal; }
 
 pre {
-  white-space: pre-line; }
+  white-space: pre-line;
+  background: #1C1C21;
+  border-radius: 3px;
+  padding: 0.7rem 1.5rem;
+  line-height: 1.4; }
+  pre code {
+    background: none;
+    font-size: 0.8rem;
+    color: #BABAC7;
+    padding: 0;
+    margin: 0; }
 
 code {
   font-size: 0.9rem;
-  color: #777;
-  background: #fff;
+  color: #7C7C95;
+  background: #DFDFE6;
   border-radius: 3px;
-  padding: 0.1rem 0.5rem; }
+  padding: 0.15rem 0.4rem;
+  margin: 0 0.15rem; }
 
 blockquote {
   font-family: "OpenSansItalic", sans-serif;
@@ -492,6 +530,20 @@ dl {
       top: -4px;
       color: #BABAC7;
       font-size: 1.4rem; }
+
+#network-bar {
+  background: #fff;
+  padding: 0.2rem 1rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #BABAC7;
+  text-align: right; }
+  #network-bar a {
+    color: #BABAC7;
+    border: none;
+    padding: 0.4rem 0.5rem; }
+    #network-bar a:hover {
+      color: #E2213D; }
 
 #header {
   background: #fff;
@@ -642,6 +694,46 @@ dl {
       #footer .links {
         text-align: right; } }
 
+.member {
+  text-align: center;
+  padding: 1.5rem 0.5rem !important; }
+  .member .avatar {
+    background: #BABAC7;
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto 1rem;
+    overflow: hidden; }
+  .member .text {
+    font-size: 0.8rem; }
+    .member .text .name {
+      font-family: "LatoHeavy", sans-serif;
+      font-size: 1.1rem; }
+    .member .text .contact {
+      opacity: 0;
+      color: #9e9eb0;
+      margin-top: 0.2rem; }
+      .member .text .contact a {
+        font-size: 0.75rem;
+        border: none;
+        color: #9e9eb0; }
+    .member .text .donate {
+      font-size: 0.8rem;
+      margin-top: 0.8rem;
+      opacity: 0; }
+      .member .text .donate input {
+        width: 3.5rem;
+        margin: 0 0.7rem 0 0.4rem;
+        padding: 0.1rem 0.35rem;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 4px; }
+  .member:hover {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(186, 186, 199, 0.4); }
+    .member:hover .contact, .member:hover .donate {
+      opacity: 1; }
+
 .box {
   background: #fff;
   box-shadow: 0 2px 4px rgba(186, 186, 199, 0.4);
@@ -659,6 +751,11 @@ dl {
         margin-right: 0.7rem;
         position: relative;
         top: 1px; }
+      .box.wallet .os .desc {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        font-family: "Lato", sans-serif;
+        color: #9090a5; }
     .box.wallet .button {
       color: #1C1C21;
       width: 100%;
@@ -676,6 +773,19 @@ dl {
         border-right: 1px solid #dadae3; }
         .box.wallet .button.split:last-child {
           border-right: 0; }
+
+.meta {
+  font-size: 0.85rem;
+  color: #BABAC7; }
+  .meta p {
+    margin: 0 0 0.2rem; }
+
+.actions {
+  margin-top: 2rem; }
+  .actions .button.secondary {
+    font-size: 0.85rem;
+    font-family: "Lato", sans-serif;
+    padding: 0.35rem 1rem; }
 
 .message {
   margin: 1.5rem 0 2rem;
