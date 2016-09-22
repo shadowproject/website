@@ -16,7 +16,8 @@ title: Community
 
 - [Slack](https://shadowproject.slack.com) – join our conversations ([get invite here](https://slack.shadowproject.io))
 - **IRC** – prefer IRC? #shadowcash on freenode.net
-- [Shadow Project forum](https://talk.shadowproject.io) ([BitcoinTalk thread](https://bitcointalk.org/index.php?topic=745352)
+- [Shadow Project forum](https://talk.shadowproject.io)
+- [BitcoinTalk](https://bitcointalk.org/index.php?topic=745352) announcement thread
 - [r/ShadowCash](http://reddit.com/r/shadowcash) on Reddit
 - [v/ShadowProject](https://voat.co/v/ShadowProject) on Voat
 
