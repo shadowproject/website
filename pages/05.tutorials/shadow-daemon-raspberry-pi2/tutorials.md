@@ -29,7 +29,7 @@ $ sudo apt-get install git build-essential libssl-dev libdb-dev libdb++-dev libb
 Download Shadow source code:
 
 ```
-$ git clone https://github.com/ShadowProject/shadow 
+$ git clone https://github.com/ShadowProject/shadow
 $ cd shadow/src
 ```
 
@@ -51,7 +51,7 @@ Compile Shadow source code (shadowcoind):
 
 ```
 ~/shadow/src $ make -f makefile.unix -j 3
-~/shadow/src $ strip shadowcoin
+~/shadow/src $ strip shadowcoind
 ```
 
 Run Shadow daemon (shadowcoind):
