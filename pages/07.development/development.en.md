@@ -15,7 +15,7 @@ Shadow is an **Open Source project** which is created almost entirely by **volun
 
 The Shadow project is hosted over on **[GitHub](https://github.com/ShadowProject/)**. This is where our developers work hard on the next version(s) of the software. To get involved with developing Shadow, check out our detailed contributing guidelines. We credit all contributors to the Shadow project in every major and minor release.
 
-We hold public development meetings and chat in our Slack team (**[get an invite](http://shadowproject.herokuapp.com/)** and join **[our chat](https://shadowproject.slack.com/)**). We also maintain a public roadmap and dev blog to give you an idea of what's being worked on right now, and what's coming next.
+We hold public development meetings and chat in our Slack team (**[get an invite](https://slack.shadowproject.io/)** and join **[our chat](https://shadowproject.slack.com/)**). We also maintain a public roadmap and dev blog to give you an idea of what's being worked on right now, and what's coming next.
 
 We're currently looking for lead contributors in the following roles:
 
