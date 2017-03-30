@@ -146,7 +146,7 @@ dl {
 }
 
 #header {
-  @include gradient(#fff, $bg); border-bottom: 1px solid $lightgrey;
+  @include gradient(#fff, $bg); border-bottom: 1px solid $red;
   padding: 3rem 0;
   text-align: center;
   @include respond-to(medium) {
@@ -169,6 +169,11 @@ dl {
   }
 }
 
+#notice {
+  border-bottom: 1px solid $red; background: rgba($red, 0.05);
+  padding: 2rem 0;
+  p { margin: 0; }
+}
 
 #content {
   border-top: 1px solid $lightgrey;

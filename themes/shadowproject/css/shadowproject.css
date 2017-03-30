@@ -554,7 +554,7 @@ dl {
   background: -ms-linear-gradient(top, #fff 0%, #F7F7F9 100%);
   background: linear-gradient(to bottom, #fff 0%, #F7F7F9 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 );
-  border-bottom: 1px solid #DFDFE6;
+  border-bottom: 1px solid #E2213D;
   padding: 3rem 0;
   text-align: center; }
   @media only screen and (min-width: 40.063rem) {
@@ -581,6 +581,13 @@ dl {
       #header .logo .logotype .grey {
         color: #BABAC7;
         font-family: "Lato", sans-serif; }
+
+#notice {
+  border-bottom: 1px solid #E2213D;
+  background: rgba(226, 33, 61, 0.05);
+  padding: 2rem 0; }
+  #notice p {
+    margin: 0; }
 
 #content {
   border-top: 1px solid #DFDFE6;
